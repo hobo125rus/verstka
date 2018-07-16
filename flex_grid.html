@@ -7,6 +7,19 @@
   <style media="screen">
     .row {
       display: flex;
+      flex-wrap: wrap;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    .container {
+      max-width: 976px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, col-9, .col-10, .col-11, .col-12 {
+      padding-left: 8px;
+      padding-right: 8px;
+      box-sizing: border-box;
     }
     .col-1 {
       flex-basis: 8.33333%;
@@ -44,8 +57,15 @@
     .col-12 {
       flex-basis: 100%;
     }
+    .card {
+      background-color: #ff6677;
+      border: 1px solid rgba(72,72,72,0.2);
+      margin-bottom: 20px;
+      text-align: center;
+    }
   </style>
   <body>
+    <div class="container">
     <div class="row">
       <div class="col-4">
         <div class="card">
@@ -65,6 +85,13 @@
           <p>Restaurants</p>
         </div>
       </div>
+      <div class="col-4">
+        <div class="card">
+          <img src="./test.png" alt="">
+          <p>Test block</p>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
 </html>
